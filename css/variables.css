@@ -79,10 +79,10 @@
   --shadow-float:      0 16px 40px rgba(22, 21, 20, 0.1);
 
   
-  --ease-editorial:    cubic-bezier(0.22, 1, 0.36, 1);
-  --duration-fast:     180ms;
-  --duration-normal:   350ms;
-  --duration-slow:     600ms;
+  --ease-editorial:    cubic-bezier(0.2, 0.72, 0.24, 1);
+  --duration-fast:     240ms;
+  --duration-normal:   480ms;
+  --duration-slow:     780ms;
 
   --z-base:            1;
   --z-dropdown:        100;

@@ -2,7 +2,7 @@
 
 import { initNavigation } from './navigation.js';
 import { initLiveClock, initScrollReveals } from './animations.js';
-import { initProjectDrawers } from './projects.js?v=26.13';
+import { initProjectDrawers } from './projects.js?v=26.14';
 import { initContact } from './contact.js?v=26.10';
 import { initSound } from './sound.js?v=26.9';
 import { initCursorAndPreviews } from './cursor.js?v=26.4';

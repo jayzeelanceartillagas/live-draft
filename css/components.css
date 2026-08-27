@@ -1129,15 +1129,16 @@
 }
 
 .work-item__drawer {
-  max-height: 0;
+  height: 0;
   overflow: hidden;
-  transition: max-height var(--duration-slow) var(--ease-editorial);
+  transition: height var(--duration-slow) var(--ease-editorial);
   background-color: var(--bg-surface);
   border-top: 1px dashed var(--border-subtle);
+  will-change: height;
 }
 
 .work-item.expanded .work-item__drawer {
-  max-height: 1400px;
+  visibility: visible;
 }
 
 .work-item__drawer-content {
