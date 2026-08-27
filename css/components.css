@@ -1149,11 +1149,32 @@
 }
 
 .work-item__preview-frame {
+  position: relative;
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-lg);
   overflow: hidden;
   background-color: var(--bg-dark);
   box-shadow: var(--shadow-elevated);
+}
+
+.work-item__preview-frame.is-loading::after,
+.work-item__preview-frame.is-error::after {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  color: #f4efe6;
+  font: 700 .65rem var(--font-mono);
+  letter-spacing: .1em;
+  text-align: center;
+}
+.work-item__preview-frame.is-loading::after { content: 'LOADING PROJECT VIEW\2026'; animation: previewPulse 1s steps(2, end) infinite; }
+.work-item__preview-frame.is-error::after { content: 'PROJECT VIEW UNAVAILABLE / OPEN LIVE SITE'; }
+.work-item__preview-frame.is-loaded::after { display: none; }
+
+@keyframes previewPulse {
+  50% { opacity: .45; }
 }
 
 .work-item__preview-img {
