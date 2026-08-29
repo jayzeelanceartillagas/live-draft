@@ -5,7 +5,7 @@ import { initLiveClock, initScrollReveals } from './animations.js';
 import { initProjectDrawers } from './projects.js?v=26.14';
 import { initContact } from './contact.js?v=26.10';
 import { initSound } from './sound.js?v=26.9';
-import { initCursorAndPreviews } from './cursor.js?v=26.4';
+import { initCursorAndPreviews } from './cursor.js?v=26.17';
 import { initPlayground } from './playground.js';
 import { initThemeSwitcher } from './theme.js';
 import { initStickers } from './stickers.js?v=26.9';

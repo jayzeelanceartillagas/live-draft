@@ -92,6 +92,11 @@ export function initCursorAndPreviews() {
         hideProjectPreview();
         return;
       }
+      if (item.querySelector('.work-item__showcase')) {
+        hideProjectPreview();
+        setCursorState('VIEW', true);
+        return;
+      }
       const id = item.id;
       const data = projectPreviews[id];
 
