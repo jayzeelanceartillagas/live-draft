@@ -1119,6 +1119,8 @@
   transition: transform 900ms var(--ease-editorial), filter 500ms var(--ease-editorial);
 }
 
+.work-item__showcase--greencab img { object-position: center 38%; }
+
 .work-item__showcase > span {
   position: absolute;
   right: 16px;
