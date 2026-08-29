@@ -1113,13 +1113,11 @@
 
 .work-item__showcase img {
   width: 100%;
-  aspect-ratio: 16 / 8;
+  height: auto;
   object-fit: cover;
   object-position: top center;
   transition: transform 900ms var(--ease-editorial), filter 500ms var(--ease-editorial);
 }
-
-.work-item__showcase--greencab img { object-position: center 38%; }
 
 .work-item__showcase > span {
   position: absolute;
@@ -1315,7 +1313,6 @@
     justify-self: start;
   }
   .work-item__showcase { margin: 0 var(--space-md) var(--space-xl); box-shadow: 4px 4px 0 var(--ink-primary); }
-  .work-item__showcase img { aspect-ratio: 16 / 10; }
   .work-item__showcase > span { right: 10px; bottom: 10px; left: 10px; align-items: flex-start; flex-direction: column; gap: 2px; }
   .work-item__drawer-content {
     grid-template-columns: 1fr;
