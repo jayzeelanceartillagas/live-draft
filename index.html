@@ -29,16 +29,17 @@
   <script src="js/favicon.js"></script>
 
   
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="preload" href="assets/fonts/plus-jakarta-sans.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/fraunces-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/space-mono-regular.woff2" as="font" type="font/woff2" crossorigin>
 
   
-  <link rel="stylesheet" href="css/variables.css?v=26.14">
+  <link rel="stylesheet" href="css/fonts.css?v=26.15">
+  <link rel="stylesheet" href="css/variables.css?v=26.15">
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/layout.css">
-  <link rel="stylesheet" href="css/components.css?v=26.14">
-  <link rel="stylesheet" href="css/animations.css?v=26.14">
+  <link rel="stylesheet" href="css/components.css?v=26.15">
+  <link rel="stylesheet" href="css/animations.css?v=26.15">
 
   
   <script type="application/ld+json">
@@ -150,7 +151,7 @@
   
   <header class="navbar" role="banner">
     <div class="container navbar__inner">
-      <a href="#hero" class="navbar__brand" aria-label="Go to homepage">
+      <a href="#hero" class="navbar__brand">
         Jayzee Lance <span class="navbar__edition">✦ ver. 26.2</span>
       </a>
 
@@ -870,7 +871,7 @@
           
           <div class="direct-contact fade-in-up delay-1">
             <div class="direct-contact__block">
-              <h4>Electronic Mail</h4>
+              <h3>Electronic Mail</h3>
               <div class="direct-contact__email-row">
                 <a class="direct-contact__email" href="mailto:jayzeelance7201@gmail.com">jayzeelance7201@gmail.com</a>
                 <button type="button" class="btn btn--copy" id="copy-email-btn" aria-label="Copy email address to clipboard">
@@ -880,7 +881,7 @@
             </div>
 
             <div class="direct-contact__block">
-              <h4>Current Base</h4>
+              <h3>Current Base</h3>
               <p style="font-size: 1.05rem; color: var(--ink-primary); font-weight: 500;">
                 Manila, Philippines 🇵🇭
               </p>
@@ -890,7 +891,7 @@
             </div>
 
             <div class="direct-contact__block">
-              <h4>Social Indices</h4>
+              <h3>Social Indices</h3>
               <div class="flex gap-md" style="margin-top: 6px;">
                 <a href="https://github.com/jayzeelanceartillagas" target="_blank" rel="noopener noreferrer" class="btn btn--secondary" style="padding: 8px 18px;">
                   GitHub ↗
@@ -941,7 +942,7 @@
     <span class="music-widget__copy"><small>LISTENING TO / 8-BIT PREVIEW</small><strong>Daft Punk — Digital Love</strong></span>
   </aside>
 
-  <button class="cli-launcher" data-cli-toggle type="button" aria-label="Open command palette">[ ⌘K / CLI ]</button>
+  <button class="cli-launcher" data-cli-toggle type="button" title="Open command palette">[ ⌘K / CLI ]</button>
   <section class="cli-drawer" id="cli-drawer" aria-hidden="true" aria-label="Developer command palette">
     <div class="cli-drawer__bar"><span>JAYZEE.OS / QUICK JUMP</span><button data-cli-toggle type="button" aria-label="Close command palette">ESC ×</button></div>
     <pre class="cli-drawer__output" id="cli-output" aria-live="polite">Ready. Type “help” for commands.</pre>

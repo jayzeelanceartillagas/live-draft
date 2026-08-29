@@ -1626,7 +1626,7 @@
   gap: var(--space-2xl);
 }
 
-.direct-contact__block h4 {
+.direct-contact__block h3 {
   font-family: var(--font-mono);
   font-size: 0.72rem;
   text-transform: uppercase;
@@ -1679,6 +1679,7 @@
 .colophon__brand {
   font-family: var(--font-serif);
   font-size: 1.4rem;
+  color: #f4efe6;
   margin-bottom: 6px;
 }
 
