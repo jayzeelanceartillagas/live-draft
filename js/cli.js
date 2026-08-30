@@ -28,13 +28,13 @@ export function initCli() {
     if (event.key !== 'Enter') return;
     const command = input.value.trim().toLowerCase();
     input.value = '';
-    const targets = { home: 'hero', cover: 'hero', notes: 'about', works: 'works', world: 'sandbox', arsenal: 'craft', dispatch: 'contact', contact: 'contact' };
+    const targets = { home: 'hero', cover: 'hero', notes: 'about', works: 'works', world: 'sandbox', arsenal: 'craft', message: 'contact', contact: 'contact' };
     if (targets[command]) {
       document.getElementById(targets[command])?.scrollIntoView({ behavior: 'smooth' });
       write(`> ${command}\nNavigating to ${targets[command].toUpperCase()}…`);
       setTimeout(() => toggle(false), 450);
     } else if (command === 'help') {
-      write('> help\nhelp · works · notes · world · arsenal · dispatch · theme · sound · clear');
+      write('> help\nhelp · works · notes · world · arsenal · message · theme · sound · clear');
     } else if (command === 'theme') {
       const themes = [...document.querySelectorAll('[data-theme-choice]')];
       const current = themes.findIndex((button) => button.classList.contains('active'));

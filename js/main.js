@@ -1,7 +1,7 @@
 
 
 import { initNavigation } from './navigation.js';
-import { initLiveClock, initScrollReveals } from './animations.js';
+import { initLiveClock, initScrollReveals } from './animations.js?v=26.1';
 import { initProjectDrawers } from './projects.js?v=26.14';
 import { initContact } from './contact.js?v=26.10';
 import { initSound } from './sound.js?v=26.9';
@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   console.log(
-    '%c✦ Jayzee Lance Artillagas — Creative Portfolio ver. 26.2 active',
+    '%c✦ LIVE DRAFT — Release 26.2 active',
     'background: #161514; color: #c84b2c; font-family: monospace; font-size: 12px; padding: 4px 8px; border-radius: 3px;'
   );
 });

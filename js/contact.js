@@ -106,14 +106,14 @@ export function initContact() {
           name: fields.name.el.value.trim(),
           email: fields.email.el.value.trim(),
           message: fields.message.el.value.trim(),
-          _subject: 'New portfolio dispatch for Jayzee',
+          _subject: 'New portfolio message for Jayzee',
           _template: 'table',
           _honey: form.elements._honey?.value || '',
         }),
       });
       const result = await response.json().catch(() => ({}));
       if (!response.ok || result.success === false || result.success === 'false') {
-        throw new Error(result.message || 'The dispatch service could not accept this message.');
+        throw new Error(result.message || 'The message service could not accept this message.');
       }
 
       form.style.display = 'none';
@@ -126,7 +126,7 @@ export function initContact() {
       }, 6000);
     } catch (error) {
       if (failureMsg) {
-        failureMsg.textContent = 'Dispatch failed to send. Please try again or email me directly at jayzeelance7201@gmail.com.';
+        failureMsg.textContent = 'Message failed to send. Please try again or email me directly at jayzeelance7201@gmail.com.';
         failureMsg.classList.add('visible');
       }
       console.error('Contact form submission failed:', error);

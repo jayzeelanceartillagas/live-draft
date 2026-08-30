@@ -25,7 +25,10 @@ export function initLiveClock() {
 }
 
 export function initScrollReveals() {
-  const elements = document.querySelectorAll('.fade-in-up');
+  document.documentElement.classList.add('motion-ready');
+  const elements = document.querySelectorAll(
+    '.fade-in-up, .section-heading, .draft-log__manifesto'
+  );
 
   const observer = new IntersectionObserver(
     (entries) => {
@@ -36,7 +39,7 @@ export function initScrollReveals() {
         }
       });
     },
-    { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
+    { threshold: 0.12, rootMargin: '0px 0px -48px 0px' }
   );
 
   elements.forEach((el) => observer.observe(el));
