@@ -1,5 +1,8 @@
 {
   "version": 1,
-  "include": ["/google7a255ffa8d4f868b.html"],
+  "include": [
+    "/google7a255ffa8d4f868b.html",
+    "/google9a2156e10c8845d3.html"
+  ],
   "exclude": []
 }
